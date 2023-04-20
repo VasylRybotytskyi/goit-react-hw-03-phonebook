@@ -63,7 +63,6 @@ export class App extends Component {
     if (this.state.contacts !== prevState.contacts) {
       localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
     }
-    console.log('update state');
   }
   render() {
     console.log('Render componentDidMount');
