@@ -20,7 +20,6 @@ export class App extends Component {
         number: PropTypes.string.isRequired,
       })
     ),
-    filter: PropTypes.string,
   };
 
   // static defaultProps = {
