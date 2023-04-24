@@ -67,7 +67,7 @@ export class App extends Component {
   render() {
     console.log('Render componentDidMount');
     const { filter, contacts } = this.state;
-    const normalizedContact = filter && filter.toLocaleLowerCase();
+    const normalizedContact = filter ? filter.toLocaleLowerCase() : '';
     const visibleContacts = contacts.filter(contact =>
       contact.name.toLocaleLowerCase().includes(normalizedContact)
     );
